@@ -1,8 +1,8 @@
 Package.describe({
   summary: "QQ account login for meteor",
   "version": "0.0.7",
-  "git": "https://github.com/leonzhang1109/meteor-accounts-qq",
-  "name": "leonzhang1109:accounts-qq"
+  "git": "https://github.com/95zz/meteor-accounts-qq",
+  "name": "95zz:accounts-qq"
 });
 
 Package.onUse(function(api) {
@@ -16,7 +16,7 @@ Package.onUse(function(api) {
   api.use('http', ['server']);
   api.use('templating', 'client');
   api.use('random', 'client');
-  api.use('underscore', 'server');
+  api.use('underscore', ['client', 'server']);
   api.use('service-configuration', ['client', 'server']);
 
   api.addFiles('qq_client.js', 'client');
